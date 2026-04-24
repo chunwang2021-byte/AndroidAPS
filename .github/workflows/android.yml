@@ -27,7 +27,7 @@ jobs:
         export storePassword=${{ secrets.STORE_PASSWORD }}
         export keyAlias=${{ secrets.KEY_ALIAS }}
         export keyPassword=${{ secrets.KEY_PASSWORD }}
-        export storeFile=${{ secrets.STORE_FILE }}
+        export storeFile="${{ secrets.STORE_FILE }}"
         ./gradlew assembleFullRelease \
         -Dorg.gradle.jvmargs="-Xmx8g -XX:+UseParallelGC -Xss1024m" \
         -Dkotlin.daemon.jvm.options="-Xmx2g" \
