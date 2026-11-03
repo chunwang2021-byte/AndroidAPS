@@ -31,23 +31,6 @@ You need to get the secerts of the key store file to sign your application. For 
 **It's really recommanded that you can sign your apk file with your own key store file after learning some Android knowledge.**
 Please follow these steps:
 * Fork this repository.
-* Scan the below QR code and subscribe "一型码农Lex" WeChat Channel.  
-<a href="/Documentation/wechat_qr.png"><img src="/Documentation/wechat_qr.png?raw=true" alt="WeChat Channel QR code" width="340"></a>  
-* Join the WeChat group and ask for the secrets. (Get the WeChat group QR code form the middle menu of "一型码农Lex" WeChat Channel. Scan to join.)
-* Add below secrets in the  `Actions secrets and variables` settings of your repository.  
-<a href="/Documentation/screen1.png"><img src="/Documentation/screen1.png?raw=true" alt="Screenshot of Actions secrets" width="800"></a>  
-  `KEY_ALIAS`, `KEY_PASSWORD`, `STORE_FILE`, `STORE_PASSWORD`. 
-* Trigger build in Github Actions
-* Download the `aaps.zip` file in `Artifacts`
-
-### 如果你不熟悉安卓开发：
-你需要获取安卓签名文件的密码等信息，因安全原因，这些敏感信息不能公开发布于此。
-**强烈建议学习相关知识，编译完APK后，用你自己的签名文件签名。**
-请按如下步骤操作:
-* 克隆此代码仓库到你自己的Github账号
-* 扫描下方二维码关注“一型码农Lex”微信公众号。Scan the below QR code and subscribe "一型码农Lex" WeChat Channel.  
-<a href="/Documentation/wechat_qr.png"><img src="/Documentation/wechat_qr.png?raw=true" alt="WeChat Channel QR code" width="340"></a>  
-* 点击“一型码农Lex”微信公众号的中间菜单，获取入群二维码。进去索要签名文件的密码。
 * 在你克隆的仓库设置中的  `Actions secrets and variables` 选项中添加如下秘密环境变量：  
 <a href="/Documentation/screen1.png"><img src="/Documentation/screen1.png?raw=true" alt="Screenshot of Actions secrets" width="800"></a>  
   `KEY_ALIAS`, `KEY_PASSWORD`, `STORE_FILE`, `STORE_PASSWORD`，这些变量的值都在群中。
