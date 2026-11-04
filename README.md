@@ -1,4 +1,3 @@
-
 ## 如何编译
 
 ### If your are familiar with Android development:
